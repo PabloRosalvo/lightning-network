@@ -10,6 +10,12 @@
 		932EF84766C15D3E1980B771 /* Pods_lightning_network_lightning_networkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBBFA527690A6463689B468 /* Pods_lightning_network_lightning_networkUITests.framework */; };
 		9DC84DD5C591009073B59B28 /* Pods_lightning_networkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A832634D0127BAF302930F /* Pods_lightning_networkTests.framework */; };
 		CEF8C70A1EFE122C258A3790 /* Pods_lightning_network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BA2D25214618E4A1F6FA37 /* Pods_lightning_network.framework */; };
+		EB0EF6802C29CBC800D090C9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67A2C29CBC800D090C9 /* RequestManager.swift */; };
+		EB0EF6812C29CBC800D090C9 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67B2C29CBC800D090C9 /* HTTPStatusCode.swift */; };
+		EB0EF6822C29CBC800D090C9 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67C2C29CBC800D090C9 /* RequestError.swift */; };
+		EB0EF6832C29CBC800D090C9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67D2C29CBC800D090C9 /* Result.swift */; };
+		EB0EF6842C29CBC800D090C9 /* RequestLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67E2C29CBC800D090C9 /* RequestLog.swift */; };
+		EB0EF6852C29CBC800D090C9 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67F2C29CBC800D090C9 /* ParameterEncoding.swift */; };
 		EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */; };
 		EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC422C28FDA6000615CD /* lightning_network.xcdatamodeld */; };
 		EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC452C28FDA6000615CD /* ContentView.swift */; };
@@ -57,6 +63,12 @@
 		A8A832634D0127BAF302930F /* Pods_lightning_networkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lightning_networkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBBFA527690A6463689B468 /* Pods_lightning_network_lightning_networkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lightning_network_lightning_networkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38986AFE72421295A094C08 /* Pods-lightning-network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-network.debug.xcconfig"; path = "Target Support Files/Pods-lightning-network/Pods-lightning-network.debug.xcconfig"; sourceTree = "<group>"; };
+		EB0EF67A2C29CBC800D090C9 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		EB0EF67B2C29CBC800D090C9 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		EB0EF67C2C29CBC800D090C9 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		EB0EF67D2C29CBC800D090C9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EB0EF67E2C29CBC800D090C9 /* RequestLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLog.swift; sourceTree = "<group>"; };
+		EB0EF67F2C29CBC800D090C9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		EBC0DC3B2C28FDA6000615CD /* lightning-network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightning-network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkApp.swift; sourceTree = "<group>"; };
 		EBC0DC432C28FDA6000615CD /* lightning_network.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lightning_network.xcdatamodel; sourceTree = "<group>"; };
@@ -232,6 +244,12 @@
 		EBD5F4652C2903E400AC886B /* RequestManager */ = {
 			isa = PBXGroup;
 			children = (
+				EB0EF67B2C29CBC800D090C9 /* HTTPStatusCode.swift */,
+				EB0EF67F2C29CBC800D090C9 /* ParameterEncoding.swift */,
+				EB0EF67C2C29CBC800D090C9 /* RequestError.swift */,
+				EB0EF67E2C29CBC800D090C9 /* RequestLog.swift */,
+				EB0EF67A2C29CBC800D090C9 /* RequestManager.swift */,
+				EB0EF67D2C29CBC800D090C9 /* Result.swift */,
 			);
 			path = RequestManager;
 			sourceTree = "<group>";
@@ -524,6 +542,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0EF6822C29CBC800D090C9 /* RequestError.swift in Sources */,
+				EB0EF6812C29CBC800D090C9 /* HTTPStatusCode.swift in Sources */,
 				EBD5F46E2C29169700AC886B /* Coordinator.swift in Sources */,
 				EBC0DC712C28FEE8000615CD /* UIKitViewControllerWrapper.swift in Sources */,
 				EBD5F4842C2933BE00AC886B /* LocalizedString.swift in Sources */,
@@ -534,7 +554,11 @@
 				EBD5F4772C29260000AC886B /* HomeView.swift in Sources */,
 				EBD5F46A2C29110300AC886B /* UIViewController+Coordinator.swift in Sources */,
 				EBD5F48B2C2942A500AC886B /* HomeViewModel.swift in Sources */,
+				EB0EF6842C29CBC800D090C9 /* RequestLog.swift in Sources */,
 				EBD5F4722C291CC700AC886B /* HomeViewController.swift in Sources */,
+				EB0EF6852C29CBC800D090C9 /* ParameterEncoding.swift in Sources */,
+				EB0EF6802C29CBC800D090C9 /* RequestManager.swift in Sources */,
+				EB0EF6832C29CBC800D090C9 /* Result.swift in Sources */,
 				EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */,
 				EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */,
 			);
