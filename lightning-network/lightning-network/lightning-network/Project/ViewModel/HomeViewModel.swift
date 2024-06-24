@@ -8,7 +8,6 @@
 import Foundation
 
 class HomeViewModel {
-    
     var actionButtonTapped: (() -> Void)?
     let api: NetworkApiProtocol
     
@@ -19,9 +18,8 @@ class HomeViewModel {
         actionButtonTapped?()
     }
     
-    
     func fetchListNodes(_ completion: @escaping (RequestError?) -> Void) {
-        api.fetchListNodes { [weak self] model, error in
+        api.fetchListNodes { _ , error in
             guard error == nil else {
                 completion(error)
                 return

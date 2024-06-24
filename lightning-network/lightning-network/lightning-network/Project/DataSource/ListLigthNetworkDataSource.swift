@@ -24,10 +24,6 @@ final class LigthNetworkDataSource: NSObject, UISearchBarDelegate {
         self.delegate = delegate
     }
     
-    func getModel(_ indexPath: IndexPath) -> ListsNodes? {
-        return viewModel?.modelList?[indexPath.row]
-    }
-    
     func setViewModel(viewModel: ListLigthNetworkViewModel) {
         self.viewModel = viewModel
     }
