@@ -1,18 +1,18 @@
 import Foundation
 
 protocol NetworkApiProtocol {
-    func fetchListNodes(completion: @escaping ([ListsNodes]?, RequestError?)  -> Swift.Void)
+    func fetchListNodes(completion: @escaping (ListsNode?, RequestError?)  -> Swift.Void)
 }
 
 class Network: NetworkApiProtocol {
     private let requestManagerProtocol: RequestManagerProtocol
     enum BaseUrl {
-        static let url = "https://api.github.com/users/google/repos"
+        static let url = "https://mempool.space/api/v1/lightning/nodes/rankings/connectivity"
     }
     init(requestManagerProtocol: RequestManagerProtocol = RequestManager()) {
         self.requestManagerProtocol = requestManagerProtocol
     }
-    func fetchListNodes(completion: @escaping ([ListsNodes]?, RequestError?) -> Void) {
+    func fetchListNodes(completion: @escaping (ListsNode?, RequestError?) -> Void) {
         guard let url = URL(string: BaseUrl.url) else {
             return
         }

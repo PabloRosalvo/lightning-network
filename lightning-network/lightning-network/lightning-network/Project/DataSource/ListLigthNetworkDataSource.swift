@@ -7,7 +7,7 @@
 import UIKit
 
 protocol ListNetworkDataSourceDelegate: AnyObject {
-    func seletectIndexPathRow(_ model: ListsNodes)
+    func seletectIndexPathRow(_ model: ListsNode)
 }
 
 final class LigthNetworkDataSource: NSObject, UISearchBarDelegate {
@@ -24,8 +24,8 @@ final class LigthNetworkDataSource: NSObject, UISearchBarDelegate {
         self.delegate = delegate
     }
     
-    func getNameRepository(_ indexPath: IndexPath) -> String {
-        return viewModel?.modelList?[indexPath.row].publicKey ?? ""
+    func getModel(_ indexPath: IndexPath) -> ListsNodes? {
+        return viewModel?.modelList?[indexPath.row]
     }
     
     func setViewModel(viewModel: ListLigthNetworkViewModel) {
@@ -35,7 +35,6 @@ final class LigthNetworkDataSource: NSObject, UISearchBarDelegate {
     var collectionView: UICollectionView? {
         didSet {
             collectionView?.register(ListLigthNetworkGoogleCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-
         }
     }
   
@@ -48,15 +47,8 @@ extension LigthNetworkDataSource: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let lay = collectionViewLayout as! UICollectionViewFlowLayout
-        let widthPerItem = collectionView.frame.width / 2 - lay.minimumInteritemSpacing
-        return CGSize(width: widthPerItem - 8, height: 230)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let listsNodes = ListsNodes(publicKey: viewModel?.modelList?[indexPath.row].publicKey ?? "",
-                                    alias: "", channels: 1, capacity: 1, firstSeen: 1, updatedAt: 1, city: City(de: "", en: "", es: "", fr: "", ja: "", ptBR: "", ru: "", zhCN: ""), country: City(de: "", en: "", es: "", fr: "", ja: "", ptBR: "", ru: "", zhCN: ""), isoCode: "", subdivision: "")
-        
-        self.delegate?.seletectIndexPathRow(listsNodes)
+        let widthPerItem = collectionView.frame.width - lay.minimumInteritemSpacing
+        return CGSize(width: widthPerItem - 8, height: 300)
     }
 
 }
@@ -68,8 +60,8 @@ extension LigthNetworkDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", 
                                                       for: indexPath) as? ListLigthNetworkGoogleCollectionViewCell
-        cell?.setup(nameRepository: getNameRepository(indexPath))
-        guard let cell = cell else { return .init() }
+        guard let cell = cell, let viewModel = viewModel else { return .init() }
+        cell.setup(viewModel, indexPath)
         return cell
     }
     

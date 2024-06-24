@@ -28,6 +28,8 @@ class HomeCoordinator: Coordinator {
     }
 
     func goToListLightning() {
-       print("action")
+        let controller = LightningNetworkViewController(viewModel: ListLigthNetworkViewModel())
+        controller.coordinator = self
+        navigationController.setViewControllers([controller], animated: false)
     }
 }

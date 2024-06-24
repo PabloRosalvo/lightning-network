@@ -5,20 +5,17 @@
 //  Created by Pablo Rosalvo de Melo Lopes on 24/06/24.
 //
 
+
 import Foundation
 
+// MARK: - WelcomeElement
 struct ListsNodes: Codable {
-    let publicKey: String
-    let alias: String
-    let channels: Int
-    let capacity: Int
-    let firstSeen: Int
-    let updatedAt: Int
-    let city: City
-    let country: City?
-    let isoCode: String
-    let subdivision: String?
-    
+    let publicKey, alias: String
+    let channels, capacity, firstSeen, updatedAt: Int
+    let city: City?
+    let country: Country?
+    let isoCode, subdivision: String?
+
     enum CodingKeys: String, CodingKey {
         case publicKey, alias, channels, capacity, firstSeen, updatedAt, city, country
         case isoCode = "iso_code"
@@ -30,8 +27,7 @@ struct ListsNodes: Codable {
 struct City: Codable {
     let de: String?
     let en: String
-    let es, fr, ja, ptBR: String?
-    let ru, zhCN: String?
+    let es, fr, ja, ptBR, ru, zhCN: String?
 
     enum CodingKeys: String, CodingKey {
         case de, en, es, fr, ja
@@ -40,3 +36,17 @@ struct City: Codable {
         case zhCN = "zh-CN"
     }
 }
+
+// MARK: - Country
+struct Country: Codable {
+    let de, en, es, fr, ja, ptBR, ru, zhCN: String?
+
+    enum CodingKeys: String, CodingKey {
+        case de, en, es, fr, ja
+        case ptBR = "pt-BR"
+        case ru
+        case zhCN = "zh-CN"
+    }
+}
+
+typealias ListsNode = [ListsNodes]

@@ -26,7 +26,6 @@ class HomeViewModel {
                 completion(error)
                 return
             }
-            print(model)
             completion(error)
         }
     }

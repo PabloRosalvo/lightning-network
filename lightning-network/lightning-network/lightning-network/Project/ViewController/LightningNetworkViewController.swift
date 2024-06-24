@@ -5,8 +5,8 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     private let viewModel: ListLigthNetworkViewModel
 
     
-    private let contentView: ListLigthNetworkGoogleCollectionViewCell = {
-        let view = ListLigthNetworkGoogleCollectionViewCell()
+    private let contentView: LightningNetworkView = {
+        let view = LightningNetworkView()
         view.backgroundColor = .white
         return view
     }()
@@ -19,7 +19,6 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fetchListNodes()
-        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(back))
         self.view.backgroundColor = .white
     }
@@ -44,13 +43,14 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     
     private func fetchListNodes() {
         self.startActivityIndicator()
-        self.viewModel.fetchListNodes { [weak self] error in
+            self.viewModel.fetchListNodes { [weak self] error in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 self.stopActivityIndicator()
                 if error == nil {
                     self.dataSource.setViewModel(viewModel: self.viewModel)
                     self.contentView.setDataSource(self.dataSource)
+                    self.contentView.collectionView.reloadData()
                 } else {
                     self.handleError()
                 }
@@ -66,7 +66,7 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
 
 extension LightningNetworkViewController: ListNetworkDataSourceDelegate {
     
-    func seletectIndexPathRow(_ model: ListsNodes) {
+    func seletectIndexPathRow(_ model: ListsNode) {
 
     }
     

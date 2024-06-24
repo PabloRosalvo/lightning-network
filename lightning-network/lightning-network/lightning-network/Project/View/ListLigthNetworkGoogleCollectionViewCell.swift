@@ -8,10 +8,8 @@
 import UIKit
 
 final class ListLigthNetworkGoogleCollectionViewCell: UICollectionViewCell {
-    
-    var activityView: UIActivityIndicatorView?
-    
-    private let nameRepository: UILabel  = {
+        
+    private let capacityLabel: UILabel  = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 12)
         label.textColor = .white
@@ -46,26 +44,21 @@ final class ListLigthNetworkGoogleCollectionViewCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.white.cgColor
     }
     
-    func setup(nameRepository: String) {
-        self.nameRepository.text = nameRepository
+    func setup(_ viewModel: ListLigthNetworkViewModel,_ indexPath: IndexPath) {
+        self.capacityLabel.text = viewModel.amountOfBitcoin(indexPath)
     }
     
-    func setDataSource(_ dataSource: LigthNetworkDataSource) {
-        self.collectionView.delegate = dataSource
-        self.collectionView.dataSource = dataSource
-        dataSource.collectionView = self.collectionView
-    }
     private func setupViewHierarchy() {
-        self.contentView.addSubview(nameRepository)
+        self.contentView.addSubview(capacityLabel)
     }
     
     private func setupConstraints() {
-        self.nameRepository.translatesAutoresizingMaskIntoConstraints = false
+        self.capacityLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            nameRepository.topAnchor.constraint(equalTo: self.topAnchor, constant: 24),
-            nameRepository.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
-            nameRepository.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
+            capacityLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 24),
+            capacityLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
+            capacityLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24),
         ])
     }
     

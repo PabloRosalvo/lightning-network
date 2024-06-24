@@ -9,8 +9,6 @@ import UIKit
 
 class LightningNetworkView: UIView {
 
-    var activityView = UIActivityIndicatorView(style: .large)
-
     let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Lista de Lightning"
@@ -55,7 +53,6 @@ class LightningNetworkView: UIView {
     private func setupViewHierarchy() {
         self.addSubview(titleLabel)
         self.addSubview(collectionView)
-        self.addSubview(activityView)
     }
 
     private func setupConstraints() {
@@ -63,11 +60,6 @@ class LightningNetworkView: UIView {
             titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 24),
             titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-
-            activityView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            activityView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            activityView.heightAnchor.constraint(equalToConstant: 50),
-            activityView.widthAnchor.constraint(equalToConstant: 50),
 
             collectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
             collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -24),
