@@ -1,0 +1,39 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "click_here_to_access_list" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Click here to access the list :)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clique aqui para acessar a lista :)"
+          }
+        }
+      }
+    },
+    "title_home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Lightning Network appears as a response to demands, promising to revolutionize the way Bitcoin transactions are carried out.\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Lightning Network surge como uma resposta às demandas, prometendo revolucionar a forma como as transações em Bitcoin são realizadas."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

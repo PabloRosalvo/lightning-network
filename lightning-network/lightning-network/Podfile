@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+target 'lightning-network' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for lightning-network
+
+  target 'lightning-networkTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Nimble'
+    pod 'Nimble-Snapshots'
+    pod 'Quick'
+  end
+
+  target 'lightning-networkUITests' do
+    # Pods for testing
+  end
+
+end

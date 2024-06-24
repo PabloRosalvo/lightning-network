@@ -1,0 +1,6 @@
+framework module Pods_lightning_network_lightning_networkUITests {
+  umbrella header "Pods-lightning-network-lightning-networkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
