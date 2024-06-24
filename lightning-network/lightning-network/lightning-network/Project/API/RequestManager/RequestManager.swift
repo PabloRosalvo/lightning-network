@@ -14,7 +14,11 @@ protocol RequestManagerProtocol {
 
 struct RequestManager: RequestManagerProtocol {
     
-    func request<T: Decodable>(url: URL, method: HTTPMethodV2 = .get, parameters: ParametersV2? = nil, headers: HTTPHeadersV2? = nil, completion: @escaping (Result<T>) -> Swift.Void) {
+    func request<T: Decodable>(url: URL, 
+                               method: HTTPMethodV2 = .get,
+                               parameters: ParametersV2? = nil,
+                               headers: HTTPHeadersV2? = nil,
+                               completion: @escaping (Result<T>) -> Swift.Void) {
         var request = URLRequest(url: url)
         
         request.allHTTPHeaderFields = headers
@@ -31,7 +35,9 @@ struct RequestManager: RequestManagerProtocol {
                 guard let json = jsonData else { return }
                 completion(.success(json))
             } else {
-                completion(.failure(RequestError(reason: error?.localizedDescription ?? "" , statusCode: httpUrlResponse.statusCode, data: data)))
+                completion(.failure(RequestError(reason: error?.localizedDescription ?? "" , 
+                                                 statusCode: httpUrlResponse.statusCode,
+                                                 data: data)))
             }
         }.resume()
     }

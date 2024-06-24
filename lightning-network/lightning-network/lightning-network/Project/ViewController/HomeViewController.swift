@@ -32,7 +32,9 @@ class HomeViewController: UIViewController, HomeDelegate {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     func actionButton() {
         self.viewModel.actionButtonTappedAction()
     }
+    
 }

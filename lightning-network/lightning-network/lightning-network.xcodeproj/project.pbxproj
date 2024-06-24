@@ -16,6 +16,14 @@
 		EB0EF6832C29CBC800D090C9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67D2C29CBC800D090C9 /* Result.swift */; };
 		EB0EF6842C29CBC800D090C9 /* RequestLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67E2C29CBC800D090C9 /* RequestLog.swift */; };
 		EB0EF6852C29CBC800D090C9 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67F2C29CBC800D090C9 /* ParameterEncoding.swift */; };
+		EB0EF6882C29CCF700D090C9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6872C29CCF700D090C9 /* Network.swift */; };
+		EB0EF68B2C29CDBC00D090C9 /* ListsNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF68A2C29CDBC00D090C9 /* ListsNodes.swift */; };
+		EB0EF68D2C29D1B200D090C9 /* ActivityIndicator+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF68C2C29D1B200D090C9 /* ActivityIndicator+Loading.swift */; };
+		EB0EF6932C29DB9700D090C9 /* LightningNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6922C29DB9700D090C9 /* LightningNetworkViewController.swift */; };
+		EB0EF6952C29DBA700D090C9 /* LightningNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6942C29DBA700D090C9 /* LightningNetworkView.swift */; };
+		EB0EF6982C29DC0200D090C9 /* ListLigthNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6972C29DC0200D090C9 /* ListLigthNetworkDataSource.swift */; };
+		EB0EF69A2C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6992C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift */; };
+		EB0EF69C2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF69B2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift */; };
 		EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */; };
 		EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC422C28FDA6000615CD /* lightning_network.xcdatamodeld */; };
 		EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC452C28FDA6000615CD /* ContentView.swift */; };
@@ -69,6 +77,14 @@
 		EB0EF67D2C29CBC800D090C9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		EB0EF67E2C29CBC800D090C9 /* RequestLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLog.swift; sourceTree = "<group>"; };
 		EB0EF67F2C29CBC800D090C9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		EB0EF6872C29CCF700D090C9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EB0EF68A2C29CDBC00D090C9 /* ListsNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsNodes.swift; sourceTree = "<group>"; };
+		EB0EF68C2C29D1B200D090C9 /* ActivityIndicator+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicator+Loading.swift"; sourceTree = "<group>"; };
+		EB0EF6922C29DB9700D090C9 /* LightningNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningNetworkViewController.swift; sourceTree = "<group>"; };
+		EB0EF6942C29DBA700D090C9 /* LightningNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningNetworkView.swift; sourceTree = "<group>"; };
+		EB0EF6972C29DC0200D090C9 /* ListLigthNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkDataSource.swift; sourceTree = "<group>"; };
+		EB0EF6992C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkGoogleCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB0EF69B2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkViewModel.swift; sourceTree = "<group>"; };
 		EBC0DC3B2C28FDA6000615CD /* lightning-network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightning-network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkApp.swift; sourceTree = "<group>"; };
 		EBC0DC432C28FDA6000615CD /* lightning_network.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lightning_network.xcdatamodel; sourceTree = "<group>"; };
@@ -131,6 +147,23 @@
 				A8A832634D0127BAF302930F /* Pods_lightning_networkTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0EF6862C29CCE100D090C9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EBD5F4652C2903E400AC886B /* RequestManager */,
+				EB0EF6872C29CCF700D090C9 /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EB0EF6962C29DBF900D090C9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB0EF6972C29DC0200D090C9 /* ListLigthNetworkDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		EBC0DC322C28FDA6000615CD = {
@@ -198,9 +231,10 @@
 		EBC0DC732C290258000615CD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				EB0EF6962C29DBF900D090C9 /* DataSource */,
+				EB0EF6862C29CCE100D090C9 /* API */,
 				EBD5F4782C292EB400AC886B /* Localizable */,
 				EBD5F4752C2925F400AC886B /* View */,
-				EBD5F4652C2903E400AC886B /* RequestManager */,
 				EBD5F4642C2903D400AC886B /* ViewController */,
 				EBD5F4632C2903CC00AC886B /* Coordinator */,
 				EBD5F4622C2903C300AC886B /* ViewModel */,
@@ -213,6 +247,7 @@
 		EBD5F4612C2903B000AC886B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB0EF68A2C29CDBC00D090C9 /* ListsNodes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD5F48A2C2942A500AC886B /* HomeViewModel.swift */,
+				EB0EF69B2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD5F4712C291CC700AC886B /* HomeViewController.swift */,
+				EB0EF6922C29DB9700D090C9 /* LightningNetworkViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -269,6 +306,7 @@
 				EBD5F4692C29110300AC886B /* UIViewController+Coordinator.swift */,
 				EBD5F4732C29247800AC886B /* ViewConfiguration.swift */,
 				EBD5F4882C293B1600AC886B /* String+Language.swift */,
+				EB0EF68C2C29D1B200D090C9 /* ActivityIndicator+Loading.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				EBD5F4762C29260000AC886B /* HomeView.swift */,
+				EB0EF6942C29DBA700D090C9 /* LightningNetworkView.swift */,
+				EB0EF6992C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -544,22 +584,30 @@
 			files = (
 				EB0EF6822C29CBC800D090C9 /* RequestError.swift in Sources */,
 				EB0EF6812C29CBC800D090C9 /* HTTPStatusCode.swift in Sources */,
+				EB0EF6932C29DB9700D090C9 /* LightningNetworkViewController.swift in Sources */,
 				EBD5F46E2C29169700AC886B /* Coordinator.swift in Sources */,
 				EBC0DC712C28FEE8000615CD /* UIKitViewControllerWrapper.swift in Sources */,
+				EB0EF69A2C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift in Sources */,
 				EBD5F4842C2933BE00AC886B /* LocalizedString.swift in Sources */,
 				EBD5F4672C29044400AC886B /* HomeCoordinator.swift in Sources */,
 				EBD5F4892C293B1600AC886B /* String+Language.swift in Sources */,
 				EBD5F4742C29247800AC886B /* ViewConfiguration.swift in Sources */,
 				EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */,
+				EB0EF6982C29DC0200D090C9 /* ListLigthNetworkDataSource.swift in Sources */,
 				EBD5F4772C29260000AC886B /* HomeView.swift in Sources */,
+				EB0EF6882C29CCF700D090C9 /* Network.swift in Sources */,
 				EBD5F46A2C29110300AC886B /* UIViewController+Coordinator.swift in Sources */,
 				EBD5F48B2C2942A500AC886B /* HomeViewModel.swift in Sources */,
+				EB0EF68D2C29D1B200D090C9 /* ActivityIndicator+Loading.swift in Sources */,
 				EB0EF6842C29CBC800D090C9 /* RequestLog.swift in Sources */,
 				EBD5F4722C291CC700AC886B /* HomeViewController.swift in Sources */,
 				EB0EF6852C29CBC800D090C9 /* ParameterEncoding.swift in Sources */,
 				EB0EF6802C29CBC800D090C9 /* RequestManager.swift in Sources */,
+				EB0EF68B2C29CDBC00D090C9 /* ListsNodes.swift in Sources */,
 				EB0EF6832C29CBC800D090C9 /* Result.swift in Sources */,
+				EB0EF69C2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift in Sources */,
 				EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */,
+				EB0EF6952C29DBA700D090C9 /* LightningNetworkView.swift in Sources */,
 				EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
