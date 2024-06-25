@@ -28,6 +28,10 @@
 		EB198FFC2C2A885000E868EE /* ListLigthNetworkApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB198FFB2C2A885000E868EE /* ListLigthNetworkApiSpec.swift */; };
 		EB198FFE2C2A8D2500E868EE /* RequestManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB198FFD2C2A8D2500E868EE /* RequestManagerSpec.swift */; };
 		EB1990002C2A8D4A00E868EE /* RequestManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB198FFF2C2A8D4A00E868EE /* RequestManagerMock.swift */; };
+		EB1990032C2A93E100E868EE /* ListLigthNetworkViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1990022C2A93E100E868EE /* ListLigthNetworkViewControllerSpec.swift */; };
+		EB1990052C2A98A500E868EE /* ListLigthNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1990042C2A98A500E868EE /* ListLigthNetworkViewModel.swift */; };
+		EB19900A2C2A9BE400E868EE /* ErrorGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1990072C2A9BE300E868EE /* ErrorGeneric.swift */; };
+		EB19900B2C2A9BE400E868EE /* ErrorViewGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1990082C2A9BE300E868EE /* ErrorViewGeneric.swift */; };
 		EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */; };
 		EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC422C28FDA6000615CD /* lightning_network.xcdatamodeld */; };
 		EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC452C28FDA6000615CD /* ContentView.swift */; };
@@ -88,6 +92,10 @@
 		EB198FFB2C2A885000E868EE /* ListLigthNetworkApiSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkApiSpec.swift; sourceTree = "<group>"; };
 		EB198FFD2C2A8D2500E868EE /* RequestManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerSpec.swift; sourceTree = "<group>"; };
 		EB198FFF2C2A8D4A00E868EE /* RequestManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerMock.swift; sourceTree = "<group>"; };
+		EB1990022C2A93E100E868EE /* ListLigthNetworkViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkViewControllerSpec.swift; sourceTree = "<group>"; };
+		EB1990042C2A98A500E868EE /* ListLigthNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkViewModel.swift; sourceTree = "<group>"; };
+		EB1990072C2A9BE300E868EE /* ErrorGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorGeneric.swift; sourceTree = "<group>"; };
+		EB1990082C2A9BE300E868EE /* ErrorViewGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewGeneric.swift; sourceTree = "<group>"; };
 		EBC0DC3B2C28FDA6000615CD /* lightning-network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightning-network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkApp.swift; sourceTree = "<group>"; };
 		EBC0DC432C28FDA6000615CD /* lightning_network.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lightning_network.xcdatamodel; sourceTree = "<group>"; };
@@ -176,6 +184,23 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		EB1990012C2A93BD00E868EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB1990022C2A93E100E868EE /* ListLigthNetworkViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EB1990092C2A9BE300E868EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EB1990072C2A9BE300E868EE /* ErrorGeneric.swift */,
+				EB1990082C2A9BE300E868EE /* ErrorViewGeneric.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		EBC0DC322C28FDA6000615CD = {
 			isa = PBXGroup;
 			children = (
@@ -223,9 +248,11 @@
 		EBC0DC542C28FDAA000615CD /* lightning-networkTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB1990012C2A93BD00E868EE /* ViewController */,
 				EB198FF82C2A7F3600E868EE /* API */,
 				EB198FF32C2A7BA500E868EE /* Helper */,
 				EBC0DC552C28FDAA000615CD /* HomeViewControllerSpec.swift */,
+				EB1990042C2A98A500E868EE /* ListLigthNetworkViewModel.swift */,
 			);
 			path = "lightning-networkTests";
 			sourceTree = "<group>";
@@ -242,6 +269,7 @@
 		EBC0DC732C290258000615CD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				EB1990092C2A9BE300E868EE /* Components */,
 				EB0EF6962C29DBF900D090C9 /* DataSource */,
 				EB0EF6862C29CCE100D090C9 /* API */,
 				EBD5F4782C292EB400AC886B /* Localizable */,
@@ -505,9 +533,11 @@
 				EB0EF69A2C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift in Sources */,
 				EBD5F4842C2933BE00AC886B /* LocalizedString.swift in Sources */,
 				EBD5F4672C29044400AC886B /* HomeCoordinator.swift in Sources */,
+				EB19900A2C2A9BE400E868EE /* ErrorGeneric.swift in Sources */,
 				EBD5F4892C293B1600AC886B /* String+Language.swift in Sources */,
 				EBD5F4742C29247800AC886B /* ViewConfiguration.swift in Sources */,
 				EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */,
+				EB19900B2C2A9BE400E868EE /* ErrorViewGeneric.swift in Sources */,
 				EB0EF6982C29DC0200D090C9 /* ListLigthNetworkDataSource.swift in Sources */,
 				EBD5F4772C29260000AC886B /* HomeView.swift in Sources */,
 				EB0EF6882C29CCF700D090C9 /* Network.swift in Sources */,
@@ -534,7 +564,9 @@
 				EBC0DC562C28FDAA000615CD /* HomeViewControllerSpec.swift in Sources */,
 				EB198FF52C2A7BA500E868EE /* WindowHelper.swift in Sources */,
 				EB1990002C2A8D4A00E868EE /* RequestManagerMock.swift in Sources */,
+				EB1990032C2A93E100E868EE /* ListLigthNetworkViewControllerSpec.swift in Sources */,
 				EB198FFE2C2A8D2500E868EE /* RequestManagerSpec.swift in Sources */,
+				EB1990052C2A98A500E868EE /* ListLigthNetworkViewModel.swift in Sources */,
 				EB198FFC2C2A885000E868EE /* ListLigthNetworkApiSpec.swift in Sources */,
 				EB198FF72C2A7F2600E868EE /* ListLigthNetworkApiMock.swift in Sources */,
 				EB198FF42C2A7BA500E868EE /* JsonHelper.swift in Sources */,

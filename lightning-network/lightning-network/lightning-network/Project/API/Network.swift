@@ -7,7 +7,7 @@ protocol NetworkApiProtocol {
 class Network: NetworkApiProtocol {
     private let requestManagerProtocol: RequestManagerProtocol
     enum BaseUrl {
-        static let url = "https://mempool.space/api/v1/lightning/nodes/rankings/connectivity"
+        static let url = "https://mempool.space/api//lightning/nodes/rankings/connectivity"
     }
     init(requestManagerProtocol: RequestManagerProtocol = RequestManager()) {
         self.requestManagerProtocol = requestManagerProtocol

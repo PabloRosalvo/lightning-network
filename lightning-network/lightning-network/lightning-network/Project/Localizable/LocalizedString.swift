@@ -12,7 +12,11 @@ enum LocalizedString: String {
     case titleButtonHome = "title_home_button"
     case clickHereToAccessList = "click_here_to_access_list"
     case titleListLigthning = "title_list_ligthning"
+    case messageError = "message_error"
+    case checkInternet = "check_internet"
+    case tryAgain = "try_again"
 
+    
     var localized: String {
         return NSLocalizedString(self.rawValue, comment: "")
     }

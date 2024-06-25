@@ -58,7 +58,9 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     }
     
     private func handleError() {
-        
+        self.ds.showError {
+            self.fetchListNodes()
+        }
     }
     
 }
