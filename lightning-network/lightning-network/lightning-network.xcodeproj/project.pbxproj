@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E616E80FCA7E24C67516D6F /* Pods_lightning_network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492BB84C170F21D53074BCBA /* Pods_lightning_network.framework */; };
-		D5C984287F7803F764EB4EB4 /* Pods_lightning_network_lightning_networkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3163CBBFC1B92793274E8207 /* Pods_lightning_network_lightning_networkUITests.framework */; };
 		EB0EF6802C29CBC800D090C9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67A2C29CBC800D090C9 /* RequestManager.swift */; };
 		EB0EF6812C29CBC800D090C9 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67B2C29CBC800D090C9 /* HTTPStatusCode.swift */; };
 		EB0EF6822C29CBC800D090C9 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF67C2C29CBC800D090C9 /* RequestError.swift */; };
@@ -23,12 +21,14 @@
 		EB0EF6982C29DC0200D090C9 /* ListLigthNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6972C29DC0200D090C9 /* ListLigthNetworkDataSource.swift */; };
 		EB0EF69A2C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF6992C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift */; };
 		EB0EF69C2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF69B2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift */; };
+		EB198FF42C2A7BA500E868EE /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB198FF12C2A7BA500E868EE /* JsonHelper.swift */; };
+		EB198FF52C2A7BA500E868EE /* WindowHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB198FF22C2A7BA500E868EE /* WindowHelper.swift */; };
 		EBC0DC3F2C28FDA6000615CD /* lightning_networkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */; };
 		EBC0DC442C28FDA6000615CD /* lightning_network.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC422C28FDA6000615CD /* lightning_network.xcdatamodeld */; };
 		EBC0DC462C28FDA6000615CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC452C28FDA6000615CD /* ContentView.swift */; };
 		EBC0DC482C28FDA9000615CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC0DC472C28FDA9000615CD /* Assets.xcassets */; };
 		EBC0DC4C2C28FDA9000615CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC0DC4B2C28FDA9000615CD /* Preview Assets.xcassets */; };
-		EBC0DC562C28FDAA000615CD /* lightning_networkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC552C28FDAA000615CD /* lightning_networkTests.swift */; };
+		EBC0DC562C28FDAA000615CD /* HomeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC552C28FDAA000615CD /* HomeViewControllerSpec.swift */; };
 		EBC0DC602C28FDAA000615CD /* lightning_networkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC5F2C28FDAA000615CD /* lightning_networkUITests.swift */; };
 		EBC0DC622C28FDAA000615CD /* lightning_networkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC612C28FDAA000615CD /* lightning_networkUITestsLaunchTests.swift */; };
 		EBC0DC712C28FEE8000615CD /* UIKitViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0DC702C28FEE8000615CD /* UIKitViewControllerWrapper.swift */; };
@@ -42,7 +42,6 @@
 		EBD5F4872C2934E500AC886B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EBD5F4852C2934E500AC886B /* Localizable.xcstrings */; };
 		EBD5F4892C293B1600AC886B /* String+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5F4882C293B1600AC886B /* String+Language.swift */; };
 		EBD5F48B2C2942A500AC886B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5F48A2C2942A500AC886B /* HomeViewModel.swift */; };
-		F54BD948C9C556A3A0991E48 /* Pods_lightning_networkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D4E02F4FA63442987080C /* Pods_lightning_networkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,15 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D54CDE4D324C0F1808AFAFA /* Pods-lightning-networkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-networkTests.release.xcconfig"; path = "Target Support Files/Pods-lightning-networkTests/Pods-lightning-networkTests.release.xcconfig"; sourceTree = "<group>"; };
-		1D6163703FF4F70125290F65 /* Pods-lightning-network-lightning-networkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-network-lightning-networkUITests.release.xcconfig"; path = "Target Support Files/Pods-lightning-network-lightning-networkUITests/Pods-lightning-network-lightning-networkUITests.release.xcconfig"; sourceTree = "<group>"; };
-		274D4E02F4FA63442987080C /* Pods_lightning_networkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lightning_networkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3163CBBFC1B92793274E8207 /* Pods_lightning_network_lightning_networkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lightning_network_lightning_networkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		474A142052985A16F0584F39 /* Pods-lightning-network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-network.release.xcconfig"; path = "Target Support Files/Pods-lightning-network/Pods-lightning-network.release.xcconfig"; sourceTree = "<group>"; };
-		492BB84C170F21D53074BCBA /* Pods_lightning_network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lightning_network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E6F0E579246AC3065D02445 /* Pods-lightning-network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-network.debug.xcconfig"; path = "Target Support Files/Pods-lightning-network/Pods-lightning-network.debug.xcconfig"; sourceTree = "<group>"; };
-		985CA789000A1DECBD19DC3E /* Pods-lightning-networkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-networkTests.debug.xcconfig"; path = "Target Support Files/Pods-lightning-networkTests/Pods-lightning-networkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B30DFC66E1CFC6D37241988C /* Pods-lightning-network-lightning-networkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightning-network-lightning-networkUITests.debug.xcconfig"; path = "Target Support Files/Pods-lightning-network-lightning-networkUITests/Pods-lightning-network-lightning-networkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB0EF67A2C29CBC800D090C9 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		EB0EF67B2C29CBC800D090C9 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		EB0EF67C2C29CBC800D090C9 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
@@ -86,6 +76,8 @@
 		EB0EF6972C29DC0200D090C9 /* ListLigthNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkDataSource.swift; sourceTree = "<group>"; };
 		EB0EF6992C29DC7000D090C9 /* ListLigthNetworkGoogleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkGoogleCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB0EF69B2C29DEED00D090C9 /* ListLigthNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigthNetworkViewModel.swift; sourceTree = "<group>"; };
+		EB198FF12C2A7BA500E868EE /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		EB198FF22C2A7BA500E868EE /* WindowHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowHelper.swift; sourceTree = "<group>"; };
 		EBC0DC3B2C28FDA6000615CD /* lightning-network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightning-network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0DC3E2C28FDA6000615CD /* lightning_networkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkApp.swift; sourceTree = "<group>"; };
 		EBC0DC432C28FDA6000615CD /* lightning_network.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lightning_network.xcdatamodel; sourceTree = "<group>"; };
@@ -94,7 +86,7 @@
 		EBC0DC492C28FDA9000615CD /* lightning_network.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lightning_network.entitlements; sourceTree = "<group>"; };
 		EBC0DC4B2C28FDA9000615CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC0DC512C28FDAA000615CD /* lightning-networkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lightning-networkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBC0DC552C28FDAA000615CD /* lightning_networkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkTests.swift; sourceTree = "<group>"; };
+		EBC0DC552C28FDAA000615CD /* HomeViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpec.swift; sourceTree = "<group>"; };
 		EBC0DC5B2C28FDAA000615CD /* lightning-networkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lightning-networkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0DC5F2C28FDAA000615CD /* lightning_networkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkUITests.swift; sourceTree = "<group>"; };
 		EBC0DC612C28FDAA000615CD /* lightning_networkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightning_networkUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -116,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E616E80FCA7E24C67516D6F /* Pods_lightning_network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54BD948C9C556A3A0991E48 /* Pods_lightning_networkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,23 +122,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C984287F7803F764EB4EB4 /* Pods_lightning_network_lightning_networkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2D15D774ABC65AAFA38E512 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				492BB84C170F21D53074BCBA /* Pods_lightning_network.framework */,
-				3163CBBFC1B92793274E8207 /* Pods_lightning_network_lightning_networkUITests.framework */,
-				274D4E02F4FA63442987080C /* Pods_lightning_networkTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		EB0EF6862C29CCE100D090C9 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +145,15 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		EB198FF32C2A7BA500E868EE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB198FF12C2A7BA500E868EE /* JsonHelper.swift */,
+				EB198FF22C2A7BA500E868EE /* WindowHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		EBC0DC322C28FDA6000615CD = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +162,6 @@
 				EBC0DC5E2C28FDAA000615CD /* lightning-networkUITests */,
 				EBC0DC3C2C28FDA6000615CD /* Products */,
 				FE4B4B04C9FDC231E83C0FE8 /* Pods */,
-				C2D15D774ABC65AAFA38E512 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,7 +201,8 @@
 		EBC0DC542C28FDAA000615CD /* lightning-networkTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBC0DC552C28FDAA000615CD /* lightning_networkTests.swift */,
+				EB198FF32C2A7BA500E868EE /* Helper */,
+				EBC0DC552C28FDAA000615CD /* HomeViewControllerSpec.swift */,
 			);
 			path = "lightning-networkTests";
 			sourceTree = "<group>";
@@ -349,12 +337,6 @@
 		FE4B4B04C9FDC231E83C0FE8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E6F0E579246AC3065D02445 /* Pods-lightning-network.debug.xcconfig */,
-				474A142052985A16F0584F39 /* Pods-lightning-network.release.xcconfig */,
-				B30DFC66E1CFC6D37241988C /* Pods-lightning-network-lightning-networkUITests.debug.xcconfig */,
-				1D6163703FF4F70125290F65 /* Pods-lightning-network-lightning-networkUITests.release.xcconfig */,
-				985CA789000A1DECBD19DC3E /* Pods-lightning-networkTests.debug.xcconfig */,
-				1D54CDE4D324C0F1808AFAFA /* Pods-lightning-networkTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -366,7 +348,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBC0DC652C28FDAA000615CD /* Build configuration list for PBXNativeTarget "lightning-network" */;
 			buildPhases = (
-				B0A4D80203E7AD38C2CC84AA /* [CP] Check Pods Manifest.lock */,
 				EBC0DC372C28FDA6000615CD /* Sources */,
 				EBC0DC382C28FDA6000615CD /* Frameworks */,
 				EBC0DC392C28FDA6000615CD /* Resources */,
@@ -384,7 +365,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBC0DC682C28FDAA000615CD /* Build configuration list for PBXNativeTarget "lightning-networkTests" */;
 			buildPhases = (
-				12E64D33295BED4B4A37917D /* [CP] Check Pods Manifest.lock */,
 				EBC0DC4D2C28FDAA000615CD /* Sources */,
 				EBC0DC4E2C28FDAA000615CD /* Frameworks */,
 				EBC0DC4F2C28FDAA000615CD /* Resources */,
@@ -403,7 +383,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBC0DC6B2C28FDAA000615CD /* Build configuration list for PBXNativeTarget "lightning-networkUITests" */;
 			buildPhases = (
-				72E85ABB084AE1C9CC2DBABF /* [CP] Check Pods Manifest.lock */,
 				EBC0DC572C28FDAA000615CD /* Sources */,
 				EBC0DC582C28FDAA000615CD /* Frameworks */,
 				EBC0DC592C28FDAA000615CD /* Resources */,
@@ -490,75 +469,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		12E64D33295BED4B4A37917D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-lightning-networkTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72E85ABB084AE1C9CC2DBABF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-lightning-network-lightning-networkUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0A4D80203E7AD38C2CC84AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-lightning-network-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		EBC0DC372C28FDA6000615CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -598,7 +508,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC0DC562C28FDAA000615CD /* lightning_networkTests.swift in Sources */,
+				EBC0DC562C28FDAA000615CD /* HomeViewControllerSpec.swift in Sources */,
+				EB198FF52C2A7BA500E868EE /* WindowHelper.swift in Sources */,
+				EB198FF42C2A7BA500E868EE /* JsonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,8 +668,8 @@
 		};
 		EBC0DC662C28FDAA000615CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E6F0E579246AC3065D02445 /* Pods-lightning-network.debug.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "lightning-network/lightning_network.entitlements";
@@ -765,6 +677,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lightning-network/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -793,8 +706,8 @@
 		};
 		EBC0DC672C28FDAA000615CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474A142052985A16F0584F39 /* Pods-lightning-network.release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "lightning-network/lightning_network.entitlements";
@@ -802,6 +715,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lightning-network/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -818,6 +732,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "bitcoin.test.br.lightning-network";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -830,16 +745,18 @@
 		};
 		EBC0DC692C28FDAA000615CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985CA789000A1DECBD19DC3E /* Pods-lightning-networkTests.debug.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "bitcoin.test.br.lightning-networkTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -853,16 +770,19 @@
 		};
 		EBC0DC6A2C28FDAA000615CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D54CDE4D324C0F1808AFAFA /* Pods-lightning-networkTests.release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "bitcoin.test.br.lightning-networkTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -876,7 +796,6 @@
 		};
 		EBC0DC6C2C28FDAA000615CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B30DFC66E1CFC6D37241988C /* Pods-lightning-network-lightning-networkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -898,7 +817,6 @@
 		};
 		EBC0DC6D2C28FDAA000615CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D6163703FF4F70125290F65 /* Pods-lightning-network-lightning-networkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
