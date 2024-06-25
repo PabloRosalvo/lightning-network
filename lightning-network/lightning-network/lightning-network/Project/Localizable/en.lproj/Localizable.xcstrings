@@ -33,6 +33,40 @@
           }
         }
       }
+    },
+    "title_home_button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See list\n"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver lista"
+          }
+        }
+      }
+    },
+    "title_list_ligthning" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "List Ligthning"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Lista de Lightning"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

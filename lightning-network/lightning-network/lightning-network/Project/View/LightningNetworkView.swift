@@ -11,7 +11,7 @@ class LightningNetworkView: UIView {
 
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Lista de Lightning"
+        label.text = LocalizedString.titleListLigthning.localized
         label.font = UIFont.boldSystemFont(ofSize: 32)
         label.textColor = .black
         label.adjustsFontSizeToFitWidth = true

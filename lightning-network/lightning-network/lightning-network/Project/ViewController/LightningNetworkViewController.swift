@@ -4,7 +4,6 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     
     private let viewModel: ListLigthNetworkViewModel
 
-    
     private let contentView: LightningNetworkView = {
         let view = LightningNetworkView()
         view.backgroundColor = .white
@@ -38,7 +37,7 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
     }
     
     @objc private func back() {
-        navigationController?.popViewController(animated: true)
+        viewModel.backButtonTapped()
     }
     
     private func fetchListNodes() {
@@ -65,9 +64,5 @@ final class LightningNetworkViewController: UIViewController, UISearchBarDelegat
 }
 
 extension LightningNetworkViewController: ListNetworkDataSourceDelegate {
-    
-    func seletectIndexPathRow(_ model: ListsNode) {
-
-    }
-    
+    func seletectIndexPathRow(_ model: ListsNode) {}
 }

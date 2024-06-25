@@ -2,6 +2,7 @@ import UIKit
 
 protocol HomeCoordinatorActionDelegate: AnyObject {
     func goToListLightning()
+    func back()
 }
 
 class HomeCoordinator: Coordinator {
@@ -28,8 +29,16 @@ class HomeCoordinator: Coordinator {
     }
 
     func goToListLightning() {
-        let controller = LightningNetworkViewController(viewModel: ListLigthNetworkViewModel())
+        let viewModel = ListLigthNetworkViewModel()
+        let controller = LightningNetworkViewController(viewModel: viewModel)
+        viewModel.actionBackButtonTapped = { [weak self] in
+            self?.back()
+        }
         controller.coordinator = self
-        navigationController.setViewControllers([controller], animated: false)
+        navigationController.pushViewController(controller, animated: false)
+    }
+    
+    func back() {
+        navigationController.popViewController(animated: true)
     }
 }

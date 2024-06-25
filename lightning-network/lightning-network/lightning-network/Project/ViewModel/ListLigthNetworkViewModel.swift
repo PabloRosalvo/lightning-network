@@ -14,11 +14,15 @@ final class ListLigthNetworkViewModel {
     }
     private let api: NetworkApiProtocol
     private var model: [ListsNodes]?
-    
+    var actionBackButtonTapped: (() -> Void)?
+
     init(api: NetworkApiProtocol = Network()) {
         self.api = api
     }
-    
+ 
+    func backButtonTapped() {
+        actionBackButtonTapped?()
+    }
     var modelList: [ListsNodes]? {
         return model
     }
@@ -41,7 +45,7 @@ final class ListLigthNetworkViewModel {
     
     func nameOfCity(_ indexPath: IndexPath) -> String? {
         guard let city = modelList?[indexPath.row].city else { return ""}
-        guard let result = modelList?.contains(
+        guard let _ = modelList?.contains(
             where: { $0.city?.ptBR == TypeLanguage.pt_br.rawValue }
         ) else { return city.en}
         return city.ptBR
@@ -50,7 +54,7 @@ final class ListLigthNetworkViewModel {
     
     func nameOfCountry(_ indexPath: IndexPath) -> String? {
         guard let country = modelList?[indexPath.row].country else { return ""}
-        guard let result = modelList?.contains(
+        guard let _ = modelList?.contains(
             where: { $0.country?.ptBR == TypeLanguage.pt_br.rawValue }
         ) else { return country.en }
         return country.ptBR
