@@ -36,3 +36,16 @@ Test coverage is one of them, as I didn't have much time to focus on the project
 In English or Portuguese, static strings are changed automatically.  
 
 In the coordinator I used closures more to demonstrate knowledge, but I like using the Design Pattern Delegate more.
+
+
+
+
+
+
+https://github.com/PabloRosalvo/lightning-network/assets/15870707/b260b2ac-4391-4dad-ac6b-f515a427f1e2
+
+
+
+https://github.com/PabloRosalvo/lightning-network/assets/15870707/1d066793-fabe-49e2-8add-ad15b9138d5d
+
+
